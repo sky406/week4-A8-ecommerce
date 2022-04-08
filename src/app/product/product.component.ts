@@ -18,7 +18,7 @@ export class ProductComponent implements OnInit {
   {
     let ttr:dm_result= compareDate(this.prod.restock_date)
 
-    if(ttr.before) return 'eventually';
+    if(ttr.before) return 'buy soon';
     else if (!ttr.year_dif || !ttr.month_dif)
     {
       return `restocks in ${ttr.date_dif} days`
@@ -30,7 +30,8 @@ export class ProductComponent implements OnInit {
   {
     if (this.prod.avalibility > 500) return 'in stock'
     else if (this.prod.avalibility > 100) return 'stock running low buy soon'
-    else return `only ${this.prod.avalibility} left in stock restocks ${this.restock()}`
+    else if(this.prod.avalibility>0) return `only ${this.prod.avalibility} left in stock ${this.restock()}`;
+    else return `no stock ${this.restock()}`
   }
 
 }

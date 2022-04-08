@@ -11,7 +11,7 @@ export interface product
 }
 
 // ladder co
-export function g_product(name:string = 'lorem',price:number = 6.99,num_availible:number = 100,restock_date:Date = new Date, img:string = '',description:string = 'lorem ipsum'):product
+export function g_product(name:string = 'lorem',price:number = 6.99,num_availible:number = 100,restock_date:Date = new Date, img:string = '',description:string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam '):product
 {
   let p = price.toFixed(2).split('.')
 

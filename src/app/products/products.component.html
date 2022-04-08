@@ -1,3 +1,17 @@
-<div *ngFor="let i of products">
-  <product [prod]="i"></product>
+<div class="product-container ">
+  <div class="prod" *ngFor="let i of products">
+    <!-- <product [prod]="i"></product> -->
+
+    <div class="prodimg" [ngStyle]="{'background-image':'url('+i.img+')'}"></div>
+    <h1 class="productname txt">{{i.name}}</h1>
+    <div class="price">
+    <p>{{i.price_d}}<sup>{{i.price_c}}</sup></p>
+    </div>
+    <p class="description">{{i.description}}</p>
+    <p class="stock"[ngClass]="{'lowstock':i.avalibility < 50}">{{stockwarn(i)}}</p>
+    <button>add to cart</button>
+
+
+
+  </div>
 </div>
