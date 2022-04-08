@@ -1,0 +1,9 @@
+<div>
+  <div class="prodimg" [ngStyle]="{'background-image':'url('+prod.img+')'}"></div>
+  <h1 class="productname txt">{{prod.name}}</h1>
+  <div class="price">
+    <p>{{prod.price_d}}<sup>{{prod.price_c}}</sup></p>
+  </div>
+  <p class="description">{{prod.description}}</p>
+  <p class="stock">{{stockwarn()}}</p>
+</div>

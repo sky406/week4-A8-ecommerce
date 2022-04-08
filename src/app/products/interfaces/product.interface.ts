@@ -1,8 +1,9 @@
+
 export interface product
 {
   name:string,
   price_d:number,
-  price_c:number
+  price_c:string
   avalibility:number | string,
   restock_date:Date,
   img:string
@@ -17,7 +18,7 @@ export function g_product(name:string = 'lorem',price:number = 6.99,num_availibl
   return{
     name:name,
     price_d:Number(p[0]),
-    price_c:Number(p[1]),
+    price_c:p[1],
     avalibility:num_availible,
     restock_date:restock_date,
     img:img,
