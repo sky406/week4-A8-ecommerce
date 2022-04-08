@@ -8,7 +8,7 @@
     <p>{{i.price_d}}<sup>{{i.price_c}}</sup></p>
     </div>
     <p class="description">{{i.description}}</p>
-    <p class="stock"[ngClass]="{'lowstock':i.avalibility < 50}">{{stockwarn(i)}}</p>
+    <p class="stock"[ngClass]="{'lowstock':i.avalibility < 50 && i.avalibility > 0,'nostock':i.avalibility == 0}">{{stockwarn(i)}}</p>
     <button>add to cart</button>
 
 

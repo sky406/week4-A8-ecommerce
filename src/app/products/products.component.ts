@@ -33,8 +33,8 @@ export class ProductsComponent implements OnInit {
   {
     if (prod.avalibility > 500) return 'in stock'
     else if (prod.avalibility > 100) return 'stock running low buy soon'
-    else if(prod.avalibility>0) return `only ${prod.avalibility} left in stock ${this.restock(prod)}`;
-    else return `no stock ${this.restock(prod)}`
+    else if(prod.avalibility>0) return `only ${prod.avalibility} left in stock. ${this.restock(prod)}`;
+    else return `sold out.`
   }
 
 }
