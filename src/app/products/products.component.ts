@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ladders } from './data/ladders.db';
 import { product } from './interfaces/product.interface';
 import { g_product } from './interfaces/product.interface';
-import { compareDate } from '../product/time/quicker modules for angular/granular date comparison/daymonthcomp.module';
-import { dm_result } from '../product/time/quicker modules for angular/granular date comparison/interfaces/daycomp_result.interface';
+import { compareDate } from 'granular date comparison/daymonthcomp.module';
+import { dm_result } from 'granular date comparison/interfaces/daycomp_result.interface';
 @Component({
   selector: 'products_container',
   templateUrl: './products.component.html',

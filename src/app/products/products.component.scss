@@ -43,7 +43,7 @@
 }
 .price sup::before
 {
-  content: '';
+  content: ' ';
 }
 .stock{
   color: green;
@@ -54,8 +54,18 @@
 
 .butt
 {
-  border: none;
-  background-color: rgb(241, 239, 239);
+  border: 1px solid rgb(170, 43, 43);
+  background-color: rgb(170, 43, 43);
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  transition: all 0.7s;
+  box-sizing: border-box;
+}
+
+.butt:hover
+{
+  background-color: white;
+  color: rgb(170, 43, 43);
 }
 
 h1

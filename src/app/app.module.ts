@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { NavComponent } from './nav/nav.component';
 import { LogoComponent } from './logo/logo.component';
-import { ProductComponent } from './product/product.component';
+
 import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
@@ -15,7 +15,6 @@ import { BannerComponent } from './banner/banner.component';
     ProductsComponent,
     NavComponent,
     LogoComponent,
-    ProductComponent,
     BannerComponent
   ],
   imports: [
