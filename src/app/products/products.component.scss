@@ -43,10 +43,11 @@
 }
 .price sup::before
 {
-  content: '';
+  content: ' ';
 }
 .stock{
   color: green;
+  font-weight: bold;
 }
 .lowstock{
   color:red;
@@ -55,7 +56,14 @@
 .butt
 {
   border: none;
-  background-color: rgb(241, 239, 239);
+  background-color: rgb(211, 88, 80);
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  transition: all 0.2s;
+}
+.butt:hover{
+  background: rgb(255, 19, 19);
+  color: black;
 }
 
 h1

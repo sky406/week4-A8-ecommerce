@@ -9,9 +9,8 @@
     </div>
     <p class="description">{{i.description}}</p>
     <p class="stock"[ngClass]="{'lowstock':i.avalibility < 50 && i.avalibility > 0,'nostock':i.avalibility == 0}">{{stockwarn(i)}}</p>
-    <button>add to cart</button>
-
-
+    <button class="butt">add to cart</button>
+    <!-- TODO make this responsive -->
 
   </div>
 </div>
