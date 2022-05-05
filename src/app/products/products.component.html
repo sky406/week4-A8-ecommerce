@@ -2,13 +2,13 @@
   <div class="prod" *ngFor="let i of products">
     <!-- <product [prod]="i"></product> -->
 
-    <div class="prodimg" [ngStyle]="{'background-image':'url('+i.img+')'}"></div>
+    <div class="prodimg" [ngStyle]="{'background-image':'url('+i.img_url+')'}"></div>
     <h1 class="productname txt">{{i.name}}</h1>
     <div class="price">
     <p>{{i.price_d}}<sup>{{i.price_c}}</sup></p>
     </div>
     <p class="description">{{i.description}}</p>
-    <p class="stock"[ngClass]="{'lowstock':i.avalibility < 50 && i.avalibility > 0,'nostock':i.avalibility == 0}">{{stockwarn(i)}}</p>
+    <p class="stock"[ngClass]="{'lowstock':i.availibility < 50 && i.availibility > 0,'nostock':i.availibility == 0}">{{stockwarn(i)}}</p>
     <button class="butt">add to cart</button>
     <!--TODO make this responsive -->
 

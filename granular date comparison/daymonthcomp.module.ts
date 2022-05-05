@@ -2,9 +2,9 @@ import { dm_result } from "./interfaces/daycomp_result.interface";
 
 
 export function compareDate(date:Date,compdate:Date = new Date):dm_result
-{  
+{
     //this compares two dates and returns an object that containd the differences seperated by manitude from year to millisecond
-    // most of this code just compares numbers it's not as complicated as it sounds 
+    // most of this code just compares numbers it's not as complicated as it sounds
     // the values are fully accurate only when they are put together
     if(date == compdate)
     {
@@ -12,7 +12,7 @@ export function compareDate(date:Date,compdate:Date = new Date):dm_result
             before:false,
             year_dif:0,
             month_dif:0,
-            date_dif:0, 
+            date_dif:0,
             hour_dif:0,
             sec_dif:0,
             mil_dif:0,
